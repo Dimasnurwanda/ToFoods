@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Tombol Kembali -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:contentDescription="Tombol Kembali" />
+
+        <!-- Nama Makanan -->
+        <TextView
+            android:id="@+id/foodNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Padang"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <!-- Rectangle dengan Ikon dan Teks -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle69">
+
+        <!-- Konten di Tengah -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Ikon dan Teks -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Ikon -->
+                <ImageView
+                    android:id="@+id/iconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:contentDescription="Ikon"
+                    android:src="@drawable/icon_metode" />
+
+                <!-- Teks -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Metode Pembayaran "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/HasilTextMetode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Tunai"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp">
+
+        <!-- Judul Alamat -->
+        <TextView
+            android:id="@+id/addressTitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Alamat Pengantaran"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/hasildescriptionTextView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="16dp"
+        android:text="DC-301"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Frame Baru -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <!-- Konten Tengah -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <!-- Judul Nama Makanan -->
+            <TextView
+                android:id="@+id/foodTitleTextView"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Nasi padang ayam"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Harga -->
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="12.000"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Rectangle Catatan -->
+            <FrameLayout
+                android:id="@+id/catatanFrame"
+                android:layout_width="114dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/frame_rectangle">
+
+                <!-- Ikon dan Teks Catatan -->
+                <LinearLayout
+
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <!-- Ikon Catatan -->
+                    <ImageView
+                        android:id="@+id/notesIconImageView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="Ikon Catatan"
+                        android:src="@drawable/icon_catatan" />
+
+                    <!-- Teks Catatan -->
+                    <TextView
+                        android:id="@+id/notesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Catatan"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/hasilcatatanNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="" />
+
+        </LinearLayout>
+
+        <!-- Gambar Makanan dan Tombol Tambah/Kurang Pesanan -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <!-- Gambar Makanan -->
+            <ImageView
+                android:id="@+id/foodImageView"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nasipadang_ayam" />
+
+            <!-- Tombol Tambah/Kurang Pesanan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+
+                <!-- Jumlah Pesanan -->
+                <TextView
+                    android:id="@+id/hasilquantityTextView"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Garis -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <!-- Rectangle Ringkasan Pembayaran -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="137dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/frame_rectangle"
+        android:padding="16dp">
+
+        <!-- Judul Ringkasan Pembayaran -->
+        <TextView
+            android:id="@+id/summaryTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan Pembayaran"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            />
+
+        <!-- Harga, Ongkir dan Biaya Layanan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summaryTitleTextView"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <!-- Harga -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 100.000"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <!-- Ongkir -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongkir"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 10.000"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Biaya Layanan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Layanan"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 10.000"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <!-- Garis -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <!-- Total -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 100.000"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- RelativeLayout untuk Tombol Pesan & Antar Sekarang -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <!-- Tombol Pesan & Antar Sekarang -->
+        <Button
+            android:id="@+id/konfirmasiButton"
+            android:layout_width="300dp"
+            android:layout_height="54dp"
+            android:text="Terima Pesanan"
+            android:textSize="10dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFD93D"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>

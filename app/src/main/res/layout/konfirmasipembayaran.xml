@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Tombol Kembali -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:contentDescription="Tombol Kembali" />
+
+        <!--  -->
+        <TextView
+            android:id="@+id/foodNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <!-- Judul Bayar Pesanan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar yuk pesanan mu di proses !"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp" />
+
+    <!-- Rectangle dengan Gambar Barcode -->
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/frame_rectangle"
+        android:gravity="center">
+
+        <!-- Gambar Barcode -->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="360dp"
+            android:src="@drawable/rectangle81"
+            android:contentDescription="Gambar Barcode" />
+
+    </RelativeLayout>
+
+    <!-- Button Konfirmasi Pembayaran -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <!-- Tombol Konfirmasi Pembayaran -->
+        <Button
+            android:id="@+id/konfirmasiButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Konfirmasi Pembayaran"
+            android:textSize="10dp"
+            android:contentDescription="Tombol untuk mengkonfirmasi pesanan"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFD93D"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>

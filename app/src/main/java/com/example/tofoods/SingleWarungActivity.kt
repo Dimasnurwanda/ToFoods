@@ -6,7 +6,6 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tofoods.Adapter.MakananUnikAdapter
 import com.example.tofoods.Adapter.SinglePageMakananAdapter
 import com.example.tofoods.Adapter.SinglePageMinumanAdapter
 import com.google.android.material.bottomsheet.BottomSheetDialog

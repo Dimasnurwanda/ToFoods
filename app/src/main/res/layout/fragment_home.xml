@@ -114,29 +114,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Unik nih !"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="16dp"
-            android:layout_marginHorizontal="24dp"
-            android:textSize="24sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ini nih makanan unik di telkom favorit !"
-            android:layout_marginHorizontal="24dp"
-            android:textSize="16sp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_makanan_unik"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            tools:listitem="@layout/makanan_list_item"/>
-
     </LinearLayout>
 
 </ScrollView>

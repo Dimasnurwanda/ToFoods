@@ -3,12 +3,10 @@ package com.example.tofoods
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tofoods.Adapter.CategoryAdapter
 import com.example.tofoods.Fragment.HomeFragment
 import com.example.tofoods.Fragment.PesananFragment
+import com.example.tofoods.Fragment.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val homeFragment = HomeFragment()
-        val destinationFragment = PesananFragment()
+        val pesananFragment = PesananFragment()
+        val profileFragment = ProfileFragment()
 
         val navbar = findViewById<BottomNavigationView>(R.id.navbar)
 
@@ -29,8 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         navbar.setOnNavigationItemReselectedListener {
             when(it.itemId) {
-                R.id.nav_pemesanan -> makeCurrentFragment(homeFragment)
-                R.id.nav_table -> makeCurrentFragment(destinationFragment)
+                R.id.nav_home -> makeCurrentFragment(homeFragment)
+                R.id.nav_pesanan -> makeCurrentFragment(pesananFragment)
+                R.id.nav_profile -> makeCurrentFragment(profileFragment)
             }
         }
     }

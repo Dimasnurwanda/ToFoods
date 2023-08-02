@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tofoods.Adapter.CategoryAdapter
 import com.example.tofoods.Adapter.MakananAdapter
-import com.example.tofoods.Adapter.MakananUnikAdapter
 import com.example.tofoods.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,7 +33,6 @@ class HomeFragment : Fragment() {
     private lateinit var makananAdapter: MakananAdapter
 
     private lateinit var rvMakananUnik: RecyclerView
-    private lateinit var makananUnikAdapter: MakananUnikAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,12 +59,8 @@ class HomeFragment : Fragment() {
         rvMakanan = view.findViewById(R.id.rv_makanan)
         makananAdapter = MakananAdapter()
 
-        rvMakananUnik = view.findViewById(R.id.rv_makanan_unik)
-        makananUnikAdapter = MakananUnikAdapter()
-
         categoryView()
         makananView()
-        makananUnikView()
 
     }
 
@@ -78,11 +72,6 @@ class HomeFragment : Fragment() {
     private fun categoryView() {
         rvCategory.layoutManager = GridLayoutManager(activity, 3)
         rvCategory.adapter = categoryAdapter
-    }
-
-    private fun makananUnikView() {
-        rvMakananUnik.layoutManager = GridLayoutManager(activity, 2)
-        rvMakananUnik.adapter = makananUnikAdapter
     }
 
     companion object {

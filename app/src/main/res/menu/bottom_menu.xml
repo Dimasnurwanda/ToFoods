@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Pemesanan"
-        android:id="@+id/nav_pemesanan"
+    <item android:title="Home"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="Pesanan"
+        android:id="@+id/nav_pesanan"
         android:icon="@drawable/ic_chart"/>
-    <item android:title="Table"
-        android:id="@+id/nav_table"
-        android:icon="@drawable/ic_table"/>
-    <item android:title="History"
-        android:id="@+id/nav_history"
-        android:icon="@drawable/ic_history"/>
     <item android:title="Profile"
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_profile"/>
